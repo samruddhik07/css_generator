@@ -1,0 +1,15 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #previewButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  

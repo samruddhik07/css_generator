@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customized CSS Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:lightgoldenrodyellow;">
+  
+  <div class="container mt-5">
+    <h1 class="text-center">Customized CSS Generator</h1>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h4>Customize Button</h4>
+        
+        <!-- Button customization form -->
+        <form id="cssForm">
+          <div class="mb-3">
+            <label for="bgColor" class="form-label">Background Color:</label>
+            <input type="color" class="form-control form-control-color" id="bgColor" value="#007bff">
+          </div>
+
+          <div class="mb-3">
+            <label for="textColor" class="form-label">Text Color:</label>
+            <input type="color" class="form-control form-control-color" id="textColor" value="#ffffff">
+          </div>
+
+          <div class="mb-3">
+            <label for="borderRadius" class="form-label">Border Radius:</label>
+            <input type="range" class="form-range" id="borderRadius" min="0" max="50" value="5">
+          </div>
+
+          <div class="mb-3">
+            <label for="boxShadow" class="form-label">Box Shadow:</label>
+            <input type="range" class="form-range" id="boxShadow" min="0" max="20" value="0">
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <h4>Preview</h4>
+    
+        <!-- Button preview area -->
+        <div class="text-center mb-3">
+          <button id="previewButton" class="btn">Preview Button</button>
+        </div>
+        
+        <!-- Generated CSS code area -->
+        <h5>Generated CSS Code:</h5>
+        <pre id="cssCode" class="bg-light p-3"></pre>
+        <button id="copyButton" class="btn btn-secondary">Copy CSS</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
